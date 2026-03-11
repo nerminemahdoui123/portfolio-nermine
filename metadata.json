@@ -1,0 +1,7 @@
+{
+  "name": "me-portfolio",
+  "description": "Portfolio professionnel de Nermine Mahdoui, Ingénieure en Informatique spécialisée React.js, .NET et Microservices.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
