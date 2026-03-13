@@ -110,7 +110,7 @@ Principales fonctionnalités :
   category: "Projet académique",
   images: ["https://picsum.photos/seed/pet/1200/800"]
 },
-  
+ */ 
  {
   id: "easyswap",
   title: "EasySwap",
