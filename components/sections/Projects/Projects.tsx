@@ -30,7 +30,7 @@ export const Projects: React.FC = () => {
             Mon Portfolio
           </h2>
           <p className="mt-4 text-slate-500 max-w-2xl leading-relaxed">
-            Découvrez mes projets académiques et professionnels, illustrant mes compétences en développement web , ainsi que mes expériences en gestion de projets.
+            Découvrez mes projets académiques et professionnels, illustrant mes compétences en développement web et mobile, ainsi que mes expériences en gestion de projets.
           </p>
         </div>
 
