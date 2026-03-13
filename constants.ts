@@ -40,7 +40,7 @@ images: [
   "/images/axia4.png",
   "/images/axia5.png",
   "/images/axia6.png",
-  "/images/axia7.png",
+  "/images/axia7.jpg",
   "/images/axia8.png"
 ],
   link: "https://github.com/MedMokhtarCh/MNAgile"
@@ -91,6 +91,7 @@ Technologies utilisées : .NET pour le backend et SQL Server pour la base de don
   ],
   link: "https://github.com/nerminemahdoui123/projet-.net-gestion-des-absences"
 },
+/*
 {
   id: "safepet",
   title: "SafePet",
@@ -132,7 +133,8 @@ Principales fonctionnalités :
   link: "https://github.com/Mayssalayouni/EasySwap"
 },
 
-  {
+ /*
+{
   id: "autogym",
   title: "AutoGym",
   description: "Application mobile pour la gestion des abonnements et cours sportifs.",
@@ -144,11 +146,12 @@ Principales fonctionnalités :
 - Interface mobile intuitive : application développée en Flutter pour une expérience utilisateur fluide et agréable.
 - Base de données locale : SQLite pour stocker les informations relatives aux cours et abonnements, permettant un accès rapide et sécurisé.
 - Travail collaboratif : projet développé en groupe dans le cadre d’un projet de classe, favorisant la répartition des tâches et la coordination.`,
-
   technologies: ["Flutter", "SQLite"],
   category: "Projet académique",
   images: ["https://picsum.photos/seed/gym/1200/800"]
-},
+}
+*/
+
 {
   id: "ecommerce-node-api",
   title: "API E-Commerce avec Node.js",
