@@ -23,7 +23,7 @@ export const Landing: React.FC<LandingProps> = ({ onEnter }) => {
         </h1>
         
         <p className="text-xl md:text-2xl text-slate-400 mb-12 leading-relaxed max-w-2xl mx-auto font-light">
-          Ingénieure en Informatique spécialisée dans le <span className="text-white font-medium">développement Web & Mobile</span>. 
+          Ingénieure en Informatique spécialisée dans le <span className="text-white font-medium">développement Web </span>. 
          Vos projets, ma mission.
         </p>
         

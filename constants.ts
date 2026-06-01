@@ -14,24 +14,25 @@ export const PERSONAL_INFO = {
 };
 
 export const PROJECTS: Project[] = [
- {
+{
   id: "axia-agile",
   title: "Axia Agile",
-  description: "Gestion de projets agiles, messagerie interne et gestion des droits d'accès.",
-  fullDescription: `Axia Agile est une application web développée dans le cadre de mon projet de fin d'études (PFE) lors de mon stage chez Axia Solutions. 
-Cette application permet de gérer efficacement des projets agiles avec une interface intuitive et complète.
+  description: "Plateforme de gestion de projets agiles avec gestion des droits d’accès, messagerie interne, suivi des tâches en Kanban et notifications en temps réel.",
+fullDescription: `Axia Agile est une application web basée sur une architecture microservices, développée dans le cadre de mon projet de fin d’études (PFE) chez Axia Solutions. Elle permet la gestion de projets agiles en équipe et améliore la collaboration ainsi que le suivi des projets et des tâches au sein d’une plateforme centralisée.
 
 Principales fonctionnalités :
-- Création et gestion de projets : possibilité de créer des projets, les diviser en sprints et gérer les membres affectés à chaque sprint.
-- Gestion des tâches : ajout de tâches aux sprints, suivi des tâches via un tableau Kanban interactif, et affectation des membres aux tâches spécifiques.
-- Collaboration en équipe : création de canaux de communication internes, notifications en temps réel pour les mises à jour importantes et événements clés.
-- Gestion des droits d'accès : configuration des permissions pour chaque membre afin de contrôler l'accès aux fonctionnalités de l'application.
-- Intégration avec Google Teams : génération de liens de réunions directement depuis l'application pour organiser des réunions d'équipe.
-- Gestion des abonnements : création de plans et abonnements pour les utilisateurs afin de sécuriser l'accès aux fonctionnalités avancées.
-- Backend structuré en microservices : chaque module (gestion des projets, tâches, notifications, etc.) fonctionne de manière indépendante pour faciliter la maintenance, améliorer la scalabilité et permettre des mises à jour modulaires.
+- Gestion de projets agiles : création de projets, organisation en sprints et affectation des membres avec notifications automatiques.
+- Gestion des tâches : suivi des tâches via un tableau Kanban interactif, estimation des coûts, et affectation des membres avec visibilité restreinte selon les rôles.
+- Collaboration en temps réel : messagerie interne et notifications instantanées via SignalR.
+- Gestion des droits d’accès : système de rôles (super admin, manager, membre) avec restriction des fonctionnalités selon les permissions.
+- Gestion des abonnements : création de plans d’abonnement, activation/désactivation des comptes utilisateurs selon la validité de l’abonnement.
+- Système d’authentification et emails : envoi automatique d’emails lors de la création de comptes avec identifiants et activation d’abonnement.
+- Intégration de réunions : génération et gestion de liens de réunions (Google Meet / Teams) directement depuis l’application.
+- Architecture microservices : découpage du système en services indépendants (projets, tâches, notifications, utilisateurs) afin d’améliorer la scalabilité, la maintenance et la modularité.
 
-Technologies utilisées : .NET pour le backend, React.js pour le frontend, SQL Server pour la base de données et Docker pour la containerisation. L'application offre une expérience utilisateur fluide, ergonomique et adaptée aux besoins réels d'une équipe agile.`,
-  technologies: [".NET", "React.js", "SQL Server", "Docker"],
+Technologies utilisées :
+.NET (backend), React.js (frontend), SQL Server (base de données), Docker (containerisation), SignalR (temps réel).`,
+  technologies: [".NET", "React.js", "SQL Server", "Docker", "SignalR", "SMTP Emails"],
   category: "Projet de stage",
 images: [
   "/images/axia1.png",
@@ -114,15 +115,17 @@ Principales fonctionnalités :
  {
   id: "easyswap",
   title: "EasySwap",
-  description: "Application mobile de vente et d'échange de biens entre particuliers.",
-  fullDescription: `EasySwap est un projet académique réalisé en groupe, visant à créer une application mobile facilitant la vente et l'échange de biens entre particuliers.
+  description: "Application mobile de vente et d’échange de biens entre particuliers.",
+  fullDescription: `EasySwap est un projet académique réalisé en groupe, visant à développer une application mobile facilitant la vente et l’échange de biens entre particuliers.
 
 Principales fonctionnalités :
-- Vente et échange de biens : possibilité de publier des annonces pour vendre ou échanger des objets.
-- Organisation par catégories : les biens sont classés par catégories pour faciliter la recherche et la navigation.
-- Gestion des annonces : création, modification et suppression d'annonces par les utilisateurs.
-- Interface mobile ergonomique : application développée en React Native pour une expérience fluide sur smartphone.
-- Backend et base de données : Node.js pour le backend et MySQL pour le stockage des informations, assurant la sécurité et la gestion centralisée des données.`,
+- Vente et échange de biens : publication d’annonces pour vendre ou échanger des objets.
+- Organisation par catégories : classification des biens pour faciliter la recherche et la navigation.
+- Gestion des annonces : création, modification et suppression des annonces par les utilisateurs.
+- Authentification sécurisée : mise en place d’un système d’authentification avec JWT.
+- Interface mobile ergonomique : application développée avec React Native et Expo, permettant un développement rapide, un rendu instantané (Expo Go) et des tests sur mobile en temps réel.
+- Backend et base de données : API développée avec Node.js et Express, et stockage des données dans MySQL.`,
+
 
   technologies: ["React Native", "Node.js", "MySQL"],
   category: "Projet académique",
@@ -200,36 +203,37 @@ export const EXPERIENCES: Experience[] = [
     role: "Stagiaire Développeuse Full Stack (PFE)",
     period: "Février 2025 – Juin 2025",
     description: [
-      "Développement de l’application web Axia Agile dédiée à la gestion de projets agiles et à la messagerie interne entre équipes.",
-      "Mise en œuvre d'une architecture microservices pour assurer la scalabilité.",
-      "Utilisation de technologies modernes pour une expérience utilisateur fluide."
+      "Développement de l’application web Axia Agile dédiée à la gestion de projets agiles, avec suivi des tâches et messagerie interne entre équipes.",
+      "Mise en œuvre d’une architecture microservices (services : utilisateurs, tâches, projets, chat et notifications).",
+      "Création et gestion des images Docker pour la conteneurisation des services."
     ],
     technologies: [".NET", "React.js", "SQL Server", "Docker"]
   },
-  {
-    company: "NEIVOS",
-    location: "Monastir, Tunisie",
-    role: "Stagiaire Développeuse Full Stack (Stage d’été)",
-    period: "Juillet 2024 – Août 2024",
-    description: [
-      "Développement d’un site vitrine interactif pour la promotion des solutions et services d’une startup.",
-      "Gestion des offres d’emploi et des candidatures.",
-      "Intégration d'un chatbot interactif basé sur des questions-réponses préconfigurées."
-    ],
-    technologies: ["React.js", "Node.js", "MySQL", "Dialogflow"]
-  },
-  {
-    company: "CleverTech Tunisie",
-    location: "Tunisie, Tunisie",
-    role: "Stagiaire Développeuse Full Stack (PFE)",
-    period: "Mars 2022 – Juin 2022",
-    description: [
-      "Développement des modules du tableau de bord et gestion des rapports pour l'application web DAXme.",
-      "Optimisation de la gestion des missions au sein de la plateforme.",
-      "Collaboration étroite avec l'équipe pour l'amélioration continue."
-    ],
-    technologies: ["Django", "React.js", "SQL Server"]
-  }
+
+{
+  company: "NEIVOS",
+  location: "Monastir, Tunisie",
+  role: "Stagiaire Développeuse Full Stack (Stage d’été)",
+  period: "Juillet 2024 – Août 2024",
+  description: [
+    "Développement d’un site vitrine interactif pour la promotion des solutions et services d’une startup.",
+    "Mise en place d’un espace administrateur pour l’authentification et la gestion des offres d’emploi, des blogs et des solutions publiées.",
+    "Intégration d’un chatbot interactif basé sur Dialogflow avec des scénarios de questions-réponses préconfigurés."
+  ],
+ technologies: ["React.js", "Node.js", "Express", "MySQL", "Dialogflow"]
+},
+ {
+  company: "CleverTech Tunisie",
+  location: "Tunisie",
+  role: "Stagiaire Développeuse Full Stack (PFE)",
+  period: "Mars 2022 – Juin 2022",
+  description: [
+    "Développement des modules du tableau de bord et de la gestion des rapports pour l’application web DAXme.",
+    "Création de tableaux de bord avec Chart.js.",
+    "Intégration du service Twilio pour l’envoi de SMS."
+  ],
+  technologies: ["Django", "React.js", "SQL Server", "Chart.js", "Twilio"]
+}
   
 ];
 
