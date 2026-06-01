@@ -202,11 +202,13 @@ export const EXPERIENCES: Experience[] = [
     location: "Msaken, Tunisie",
     role: "Stagiaire Développeuse Full Stack (PFE)",
     period: "Février 2025 – Juin 2025",
-    description: [
-      "Développement de l’application web Axia Agile dédiée à la gestion de projets agiles, avec suivi des tâches et messagerie interne entre équipes.",
-      "Mise en œuvre d’une architecture microservices (services : utilisateurs, tâches, projets, chat et notifications).",
-      "Création et gestion des images Docker pour la conteneurisation des services."
-    ],
+ description: [
+  "Développement de l’application web Axia Agile dédiée à la gestion de projets agiles, avec suivi des tâches et messagerie interne entre équipes.",
+  "Mise en œuvre d’une architecture microservices (services : utilisateurs, tâches, projets, chat et notifications).",
+  "Création des images Docker pour la conteneurisation des services.",
+  "Mise en place de tests unitaires et d’intégration avec Jest et Vitest.",
+  "Intégration de SonarQube pour l’analyse de la qualité du code et le suivi des bonnes pratiques."
+],
     technologies: [".NET", "React.js", "SQL Server", "Docker"]
   },
 
@@ -215,11 +217,12 @@ export const EXPERIENCES: Experience[] = [
   location: "Monastir, Tunisie",
   role: "Stagiaire Développeuse Full Stack (Stage d’été)",
   period: "Juillet 2024 – Août 2024",
-  description: [
-    "Développement d’un site vitrine interactif pour la promotion des solutions et services d’une startup.",
-    "Mise en place d’un espace administrateur pour l’authentification et la gestion des offres d’emploi, des blogs et des solutions publiées.",
-    "Intégration d’un chatbot interactif basé sur Dialogflow avec des scénarios de questions-réponses préconfigurés."
-  ],
+description: [
+  "Développement d’un site vitrine interactif pour la promotion des solutions et services d’une startup.",
+  "Mise en place d’un espace administrateur pour l’authentification et la gestion des offres d’emploi, des blogs et des solutions publiées.",
+  "Intégration d’un chatbot interactif basé sur Dialogflow avec des scénarios de questions-réponses préconfigurés.",
+  "Mise en place de tests unitaires avec Jest pour assurer la qualité du code."
+],
  technologies: ["React.js", "Node.js", "Express", "MySQL", "Dialogflow"]
 },
  {
