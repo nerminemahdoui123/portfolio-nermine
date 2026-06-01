@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
         </h1>
         
         <p className="text-lg md:text-2xl text-slate-500 max-w-3xl mb-12 leading-relaxed font-medium">
-         Spécialisée dans le développement Full Stack <span className="text-slate-900 font-bold border-b-2 border-blue-200">React.js</span>. 
+         Spécialisée dans le développement Full Stack <span className="text-slate-900 font-bold border-b-2 border-blue-200"></span>. 
     
         </p>
         
